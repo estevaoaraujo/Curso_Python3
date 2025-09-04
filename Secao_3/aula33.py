@@ -1,14 +1,9 @@
 """
-Faça um programa que peça ao usuário para digitar um número inteiro,
-informe se este número é par ou ímpar. Caso o usuário não digite um número
-inteiro, informe que não é um número inteiro.
+https://docs.python.org/pt-br/3/library/stdtypes.html
+Imutáveis que vimos: str, int, float, bool
 """
-
-numero_int = input("Digite número: ")
-
-numero_int = int(numero_int)
-
-if numero_int % 2 == 0:
-    print(f" Voce digitou {numero_int} e par")
-else:
-    print(f"Voce digitou {numero_int} e impar")    
+string = '1000'
+# outra_variavel = f'{string[:3]}ABC{string[4:]}'
+# print(string)
+# print(outra_variavel)
+print(string.zfill(10))
