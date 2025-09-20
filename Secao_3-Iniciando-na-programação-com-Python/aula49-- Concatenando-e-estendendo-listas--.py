@@ -18,7 +18,7 @@ Criar, ler, alterar, apagar = lista[i] (CRUD)
 #        0   1   2   3
 lista = [10, 20, 30, 40]
 lista.append('Luiz')
-nome = lista.pop()
+nome = lista.pop() 
 lista.append(1233) # Adiciona no final
 del lista[-1]
 # lista.clear()

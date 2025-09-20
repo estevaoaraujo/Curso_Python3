@@ -56,3 +56,24 @@ cardapio = ['','Sanduíche O Clássico','Sanduíche do Chefe','Sanduíche Vegeta
 pedido = cardapio[escolha]
 
 print(pedido)
+
+
+'''-----------------------------------------------------------------------------------------------------------------------------------------------------------'''
+play = input("Valor: ")
+lista=[]
+
+# No seu código, na opção play == 1:
+if play == 1:
+    # Pede para o usuário digitar os itens
+    itens_str = input('Insira o(s) item(ns), separados por vírgula: ')
+    
+    # Usa o .split(',') para quebrar a string em uma lista de strings
+    # O .strip() remove espaços em branco antes e depois de cada item
+    novos_itens = [item.strip() for item in itens_str.split(',')]
+    
+    # Usa .extend() para adicionar todos os novos itens à lista principal
+    lista.extend(novos_itens)
+    
+    print(f'✅ Itens adicionados com sucesso!')
+
+print(tabela)
